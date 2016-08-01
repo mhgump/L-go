@@ -210,136 +210,167 @@ function getWordData(i,answer,move){
 function switchcolor(number){
 	console.log("switch");
 	if(blueturn){
-		if(wordPool[0].decoys[number-13][0]=="btnRed"){
-			wordPool[0].decoys[number-13]=["btnBlue",number-13];
-			var index = red.indexOf(number-13);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number-13 > 0){
+			if(wordPool[0].decoys[number-13][0]=="btnRed"){
+				wordPool[0].decoys[number-13]=["btnBlue",number-13];
+				var index = red.indexOf(number-13);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number-13);
 			}
-			blue.push(number-13);
 		}
-		if(wordPool[0].decoys[number-12][0]=="btnRed"){
-			wordPool[0].decoys[number-12]=["btnBlue",number-12];
-			var index = red.indexOf(number-12);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number-12 > 0){
+			if(wordPool[0].decoys[number-12][0]=="btnRed"){
+				wordPool[0].decoys[number-12]=["btnBlue",number-12];
+				var index = red.indexOf(number-12);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number-12);
 			}
-			blue.push(number-12);
 		}
-		if(wordPool[0].decoys[number-11][0]=="btnRed"){
-			wordPool[0].decoys[number-11]=["btnBlue",number-11];
-			var index = red.indexOf(number-11);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number-11 > 0){
+			if(wordPool[0].decoys[number-11][0]=="btnRed"){
+				wordPool[0].decoys[number-11]=["btnBlue",number-11];
+				var index = red.indexOf(number-11);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number-11);
 			}
-			blue.push(number-11);
 		}
-		if(wordPool[0].decoys[number-1][0]=="btnRed"){
-			wordPool[0].decoys[number-1]=["btnBlue",number-1];
-			var index = red.indexOf(number-1);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number-1 > 0){
+			if(wordPool[0].decoys[number-1][0]=="btnRed"){
+				wordPool[0].decoys[number-1]=["btnBlue",number-1];
+				var index = red.indexOf(number-1);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number-1);
 			}
-			blue.push(number-1);
 		}
-		if(wordPool[0].decoys[number+1][0]=="btnRed"){
-			wordPool[0].decoys[number+1]=["btnBlue",number+1];
-			var index = red.indexOf(number+1);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number+1 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+1][0]=="btnRed"){
+				wordPool[0].decoys[number+1]=["btnBlue",number+1];
+				var index = red.indexOf(number+1);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number+1);
 			}
-			blue.push(number+1);
 		}
-		if(wordPool[0].decoys[number+11][0]=="btnRed"){
-			wordPool[0].decoys[number+11]=["btnBlue",number+11];
-			var index = red.indexOf(number+11);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number+11 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+11][0]=="btnRed"){
+				wordPool[0].decoys[number+11]=["btnBlue",number+11];
+				var index = red.indexOf(number+11);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number+11);
 			}
-			blue.push(number+11);
 		}
-		if(wordPool[0].decoys[number+12][0]=="btnRed"){
-			wordPool[0].decoys[number+12]=["btnBlue",number+12];
-			var index = red.indexOf(number+12);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number+12 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+12][0]=="btnRed"){
+				wordPool[0].decoys[number+12]=["btnBlue",number+12];
+				var index = red.indexOf(number+12);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number+12);
 			}
-			blue.push(number+12);
 		}
-		if(wordPool[0].decoys[number+13][0]=="btnRed"){
-			wordPool[0].decoys[number+13]=["btnBlue",number+13];
-			var index = red.indexOf(number+13);
-			if (index > -1) {
-    			red.splice(index, 1);
+		if(number+13 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+13][0]=="btnRed"){
+				wordPool[0].decoys[number+13]=["btnBlue",number+13];
+				var index = red.indexOf(number+13);
+				if (index > -1) {
+	    			red.splice(index, 1);
+				}
+				blue.push(number+13);
 			}
-			blue.push(number+13);
 		}
 	}else{
-		if(wordPool[0].decoys[number-13][0]=="btnBlue"){
-			wordPool[0].decoys[number-13]=["btnRed",number-13];
-			var index = blue.indexOf(number-13);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number-13 > 0 ){
+			if(wordPool[0].decoys[number-13][0]=="btnBlue"){
+				wordPool[0].decoys[number-13]=["btnRed",number-13];
+				var index = blue.indexOf(number-13);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number-13);
 			}
-			red.push(number-13);
 		}
-		if(wordPool[0].decoys[number-12][0]=="btnBlue"){
-			wordPool[0].decoys[number-12]=["btnRed",number-12];
-			var index = blue.indexOf(number-12);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number-12 > 0){
+			if(wordPool[0].decoys[number-12][0]=="btnBlue"){
+				wordPool[0].decoys[number-12]=["btnRed",number-12];
+				var index = blue.indexOf(number-12);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number-12);
 			}
-			red.push(number-12);
 		}
-		if(wordPool[0].decoys[number-11][0]=="btnBlue"){
-			wordPool[0].decoys[number-11]=["btnRed",number-11];
-			var index = blue.indexOf(number-11);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number-11 > 0){
+			if(wordPool[0].decoys[number-11][0]=="btnBlue"){
+				wordPool[0].decoys[number-11]=["btnRed",number-11];
+				var index = blue.indexOf(number-11);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number-11);
 			}
-			red.push(number-11);
 		}
-		if(wordPool[0].decoys[number-1][0]=="btnBlue"){
-			wordPool[0].decoys[number-1]=["btnRed",number-1];
-			var index = blue.indexOf(number-1);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number-1 > 0){
+			if(wordPool[0].decoys[number-1][0]=="btnBlue"){
+				wordPool[0].decoys[number-1]=["btnRed",number-1];
+				var index = blue.indexOf(number-1);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number-1);
 			}
-			red.push(number-1);
 		}
-		if(wordPool[0].decoys[number+1][0]=="btnBlue"){
-			wordPool[0].decoys[number+1]=["btnRed",number+1];
-			var index = blue.indexOf(number+1);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number+1 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+1][0]=="btnBlue"){
+				wordPool[0].decoys[number+1]=["btnRed",number+1];
+				var index = blue.indexOf(number+1);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number+1);
 			}
-			red.push(number+1);
 		}
-		if(wordPool[0].decoys[number+11][0]=="btnBlue"){
-			wordPool[0].decoys[number+11]=["btnRed",number+11];
-			var index = blue.indexOf(number+11);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number+11 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+11][0]=="btnBlue"){
+				wordPool[0].decoys[number+11]=["btnRed",number+11];
+				var index = blue.indexOf(number+11);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number+11);
 			}
-			red.push(number+11);
 		}
-		if(wordPool[0].decoys[number+12][0]=="btnBlue"){
-			wordPool[0].decoys[number+12]=["btnRed",number+12];
-			var index = blue.indexOf(number+12);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number+12 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+12][0]=="btnBlue"){
+				wordPool[0].decoys[number+12]=["btnRed",number+12];
+				var index = blue.indexOf(number+12);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number+12);
 			}
-			red.push(number+12);
 		}
-		if(wordPool[0].decoys[number+13][0]=="btnBlue"){
-			wordPool[0].decoys[number+13]=["btnRed",number+13];
-			var index = blue.indexOf(number+13);
-			if (index > -1) {
-    			blue.splice(index, 1);
+		if(number+13 < wordPool[0].decoys.length){
+			if(wordPool[0].decoys[number+13][0]=="btnBlue"){
+				wordPool[0].decoys[number+13]=["btnRed",number+13];
+				var index = blue.indexOf(number+13);
+				if (index > -1) {
+	    			blue.splice(index, 1);
+				}
+				red.push(number+13);
 			}
-			red.push(number+13);
 		}
-
 	}
 }
 function ismove(number){
