@@ -14,7 +14,7 @@ jQuery(function($){
          * to the Socket.IO server
          */
         init: function() {
-            IO.socket = io.connect('http://yourapp-domain.rhcloud.com:8000/', {'forceNew':true });
+            IO.socket = io.connect('http://wsexample-mhgump.rhcloud.com:8000/', {'forceNew':true });
             IO.bindEvents();
         },
 
