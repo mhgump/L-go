@@ -1,3 +1,6 @@
+# LeGO - A variation of the game GO using l shaped moves. Built off of Anagrammatix by Eric Terpstra
+ 
+
 # Anagrammatix
 
 ### UPDATE:
