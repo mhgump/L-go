@@ -2,7 +2,7 @@
  
 Play the game at this link:
 
-wsexample-mhgump.rhcloud.com
+wsexample-mhgump.rhcloud.com  ## Oh the hoster took it down, oh well, too lazy to find another free one
 
 It may take a few moments to load the server.
 
